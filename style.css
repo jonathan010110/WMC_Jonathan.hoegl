@@ -1,0 +1,139 @@
+/* Grundlayout */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: #f5f7fb;
+    color: #1f2933;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header und Navigation */
+
+.site-header {
+    background: linear-gradient(135deg, #0f9ad6, #1766c0);
+    color: #ffffff;
+    padding: 1.5rem 0 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+.subtitle {
+    margin: 0.2rem 0 0.8rem;
+    opacity: 0.9;
+}
+
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #eaf4ff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.main-nav a:hover {
+    background: #ffffff;
+    color: #1766c0;
+    transform: translateY(-1px);
+}
+
+/* Hauptbereich */
+
+.site-main {
+    padding: 1.5rem 0 2.5rem;
+}
+
+.intro-section {
+    padding: 1rem 0 1.5rem;
+}
+
+.intro-section h2 {
+    margin-top: 0;
+}
+
+/* Kategorien & Karten */
+
+.category-section {
+    padding: 1.5rem 0;
+    border-top: 1px solid #d6dde8;
+}
+
+.category-section h2 {
+    margin: 0 0 1rem;
+}
+
+.device-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.device-card {
+    background: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(15, 37, 70, 0.08);
+    border: 1px solid #e1e7f0;
+}
+
+.device-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    color: #1554a1;
+}
+
+.device-card p {
+    margin: 0 0 0.5rem;
+    font-size: 0.95rem;
+}
+
+.device-card ul {
+    margin: 0.4rem 0 0;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+
+.site-footer {
+    border-top: 1px solid #d6dde8;
+    padding: 1rem 0;
+    font-size: 0.85rem;
+    text-align: center;
+    background-color: #f0f3f9;
+}
+
+/* Responsive Feinheiten */
+
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+    }
+}
